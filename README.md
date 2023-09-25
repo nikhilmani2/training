@@ -16,12 +16,14 @@
 <!---comment--->
 <img src ="https://static.vecteezy.com/system/resources/previews/012/697/295/non_2x/3d-python-programming-language-logo-free-png.png" width="350" height ="350">
 
-|Column name 1|Column name 2|Column name 3|
+|Question Number|Question Name|Link|
 ---|---|---|
-|data 1|data 2|data 3|
-|data 1|data 2|data 3|
-|data 1|data 2|data 3|
-|data 1|data 2|[Click here for python file](https://github.com/nikhilmani2/training/blob/main/circle.py)|
+|1|Circle|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/circle.py)|
+|2|Calculator|[Click here for the python code](https://github.com/nikhilmani2/training/blob/main/ques1.py)|
+|3|Stack|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques2.py)|
+|4|Shopping Cart|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques3.py)|
+|5|Queue|data 3|
+|6|Bank|data 3|
 
 ```python
 print("Hello World")
