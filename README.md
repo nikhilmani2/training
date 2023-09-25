@@ -22,8 +22,8 @@
 |2|Calculator|[Click here for the python code](https://github.com/nikhilmani2/training/blob/main/ques1.py)|
 |3|Stack|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques2.py)|
 |4|Shopping Cart|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques3.py)|
-|5|Queue|data 3|
-|6|Bank|data 3|
+|5|Queue|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques4.py)|
+|6|Bank|[Click here for python code](https://github.com/nikhilmani2/training/blob/main/ques5.py)|
 
 ```python
 print("Hello World")
