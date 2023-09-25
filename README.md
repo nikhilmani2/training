@@ -14,7 +14,7 @@
 
 ***_For Viewing Purpose_***
 <!---comment--->
-![Image error](image url = "https://static.vecteezy.com/system/resources/previews/012/697/295/non_2x/3d-python-programming-language-logo-free-png.png")
+![Alt text](https://static.vecteezy.com/system/resources/previews/012/697/295/non_2x/3d-python-programming-language-logo-free-png.png)
 
 |Column name 1|Column name 2|Column name 3|
 ---|---|---|
