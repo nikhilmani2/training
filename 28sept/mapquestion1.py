@@ -20,7 +20,7 @@ print(filter_words(l,'h'))
 print("-----------------------------------")
 
 def concatenate(L1,L2,connector):
-    return [elem1+connector+elem2 for elem1,elem2 in zip(L1,L2)]
+    return [element1+connector+element2 for element1,element2 in zip(L1,L2)]
 print(concatenate(['A','B'],['a','b'],'-'))
 
 print("-----------------------------------")
@@ -35,5 +35,5 @@ print(d_list(['a','b','c']))
 print("-----------------------------------")
 
 def count_match_index(L):
-    return len([vals for vals in enumerate(L) if vals[0]==vals[1]])
+    return len([v for v in enumerate(L) if v[0]==v[1]])
 print(count_match_index([0,2,2,1,5,5,6,10]))
