@@ -198,13 +198,12 @@ VALUES
 ('Lithotripter', 1),
 ('Linear accelerator', 1);
 
-INSERT INTO Bill (PatientID, DoctorID, AppointmentID, Date, TotalAmount)
+INSERT INTO Bill (AppointmentID, TotalAmount)
 VALUES
-(1, 1, 1, '2023-08-08', 1000),
-(2, 2, 2, '2023-08-08', 1200),
-(3, 3, 3, '2023-08-08', 1500),
-(4, 4, 4, '2023-08-09', 1800),
-(5, 5, 5, '2023-08-09', 2100),
-(6, 6, 6, '2023-08-09', 2400),
-(7, 7, 7, '2023-08-10', 2700);
-
+(1, 1000),
+(2, 1200),
+(3, 1500),
+(4, 1800),
+(5, 2100),
+(6, 2400),
+(7, 2700);
