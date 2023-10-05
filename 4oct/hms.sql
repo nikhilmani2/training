@@ -96,8 +96,7 @@ VALUES
 ('Kushan', 'Perera', '2000-11-11', 'Male', '1822 Pine Street, Trincomalee, Sri Lanka', '+94 95 2345678', 'No known medical history'),
 ('Nayomi', 'Silva', '2001-12-12', 'Female', '2055 Birch Street, Anuradhapura, Sri Lanka', '+94 25 4567890', 'No known medical history'),
 ('Nishan', 'Rajapaksa', '2002-01-01', 'Male', '2288 Cedar Street, Polonnaruwa, Sri Lanka', '+94 65 6789012', 'No known medical history'),
-('Roshani', 'Fernando', '2003-02-02', 'Female', '2521 Elm Street, Sigiriya, Sri Lanka', '+94 75 8901234', 'No known medical history'),
-('Chanaka', 'Gunesekera', '2004-03-03', 'Male', '2754 Oak Street, Dambulla, Sri Lanka', '+94 85 0123456');
+('Roshani', 'Fernando', '2003-02-02', 'Female', '2521 Elm Street, Sigiriya, Sri Lanka', '+94 75 8901234', 'No known medical history');
 
 INSERT INTO Department (DepartmentName)
 VALUES ('Cardiology'),

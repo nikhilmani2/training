@@ -32,6 +32,7 @@ def menu():
   elif choice == 6:
     cancel_appointment_menu()
   elif choice == 7:
+    close_database_connection(mydb)
     exit()
   else:
     print("Invalid choice!")
@@ -48,17 +49,20 @@ def add_patient_menu():
     
 def add_patient(database, pfname, plname, page, pgender, paddress, pphonenumber, pmedhist):
   cursor = database.cursor()
-  cursor.execute("INSERT INTO patients (FirstName, LastName, DateOfBirth, Gender, Addresss, PhoneNumber, Medical History) VALUES (%s, %s, %s, %s, %s, %s, %s)", (pfname,plname,page,pgender,paddress,pphonenumber,pmedhist))
+  cursor.execute("INSERT INTO Patient (FirstName, LastName, DateOfBirth, Gender, Addresss, PhoneNumber, MedicalHistory) VALUES (%s, %s, %s, %s, %s, %s, %s)", (pfname,plname,page,pgender,paddress,pphonenumber,pmedhist))
   database.commit()
   cursor.close()
 
 def remove_patient_menu():
+  try:
     pid=int(input("Enter patient id: "))
     remove_patient(mydb,pid)  
+  except ValueError:
+    print("Invalid input")  
     
 def remove_patient(database, patient_id):
   cursor = database.cursor()
-  cursor.execute("DELETE FROM patients WHERE PatientID = %s", (patient_id,))
+  cursor.execute("DELETE FROM Patient WHERE PatientID = %s", (patient_id,))
   database.commit()
   cursor.close()
 
@@ -71,7 +75,7 @@ def add_doctor_menu():
 
 def add_doctor(database, doctor_first_name,doctor_last_name, doctor_specialization, doctor_department_id):
   cursor = database.cursor()
-  cursor.execute("INSERT INTO doctors (FirstName,LastName,Specialization, DepartmentID) VALUES (%s, %s, %s, %s)", (doctor_first_name,doctor_last_name, doctor_specialization, doctor_department_id))
+  cursor.execute("INSERT INTO Doctor (FirstName,LastName,Specialization, DepartmentID) VALUES (%s, %s, %s, %s)", (doctor_first_name,doctor_last_name, doctor_specialization, doctor_department_id))
   database.commit()
   cursor.close()
 
@@ -81,7 +85,7 @@ def remove_doctor_menu():
 
 def remove_doctor(database, doctor_id):
   cursor = database.cursor()
-  cursor.execute("DELETE FROM doctors WHERE DoctorID = %s", (doctor_id,))
+  cursor.execute("DELETE FROM Doctor WHERE DoctorID = %s", (doctor_id,))
   database.commit()
   cursor.close()
 
@@ -96,7 +100,7 @@ def create_appointment_menu():
 
 def create_appointment(database, appid,patient_id, doctor_id, appointment_date, appointment_time,rid):
   cursor = database.cursor()
-  cursor.execute("INSERT INTO appointments (AppointmentID,PatientID, DoctorID, AppointmentDate, AppointmentTime,RoomID) VALUES (%s, %s, %s, %s, %s, %s)", (appid,patient_id, doctor_id, appointment_date, appointment_time,rid))
+  cursor.execute("INSERT INTO Appointment (AppointmentID,PatientID, DoctorID, AppointmentDate, AppointmentTime,RoomID) VALUES (%s, %s, %s, %s, %s, %s)", (appid,patient_id, doctor_id, appointment_date, appointment_time,rid))
   database.commit()
   cursor.close()
 
@@ -106,7 +110,7 @@ def cancel_appointment_menu():
 
 def cancel_appointment(database, appointment_id):
   cursor = database.cursor()
-  cursor.execute("DELETE FROM appointments WHERE AppointmentID = %s", (appointment_id,))
+  cursor.execute("DELETE FROM Appointment WHERE AppointmentID = %s", (appointment_id,))
   database.commit()
   cursor.close()
   
